@@ -1,0 +1,23 @@
+.DS_Store
+
+# Environment and secrets
+.env
+.env.*
+*.key
+*.pem
+credentials.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+venv/
+env/
+
+# Node
+node_modules/
+npm-debug.log
+
+# OS
+Thumbs.db

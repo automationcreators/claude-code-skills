@@ -1,0 +1,125 @@
+{
+  "framework_name": "Kallaway Hooks",
+  "framework_type": "engagement_hooks",
+  "description": "6 Power Words Framework and 3-Step Hook Formula for social media engagement",
+  "applies_to": {
+    "platforms": ["twitter", "linkedin", "threads", "instagram"],
+    "categories": ["progress_updates", "learning_moments", "architecture_insights", "tips_and_tricks"]
+  },
+  "hook_types": {
+    "contrarian_snapback": {
+      "description": "Challenge common assumptions with a better approach",
+      "power_words": ["why", "most", "instead", "actually", "wrong", "misconception"],
+      "templates": [
+        {
+          "pattern": "Why {controversial_take} for {project}",
+          "example": "Why I build agents instead of scripts for {project}",
+          "description_pattern": "{common_mistake}. {better_approach}. Here's {specific_technique}",
+          "variables": ["project", "controversial_take", "common_mistake", "better_approach", "specific_technique"]
+        },
+        {
+          "pattern": "Most developers {common_mistake}. I {better_approach}",
+          "example": "Most developers debug randomly. I use systematic Claude Code prompts",
+          "description_pattern": "{detailed_explanation_of_approach}",
+          "variables": ["common_mistake", "better_approach", "detailed_explanation"]
+        },
+        {
+          "pattern": "Why {practice} is actually {reframe}",
+          "example": "Why documentation is actually prompt engineering",
+          "description_pattern": "{markdown_count} files in {project}. Each one {purpose}",
+          "variables": ["practice", "reframe", "markdown_count", "project", "purpose"]
+        }
+      ]
+    },
+    "benefit_driven": {
+      "description": "Lead with clear value proposition and outcome",
+      "power_words": ["how", "unlock", "boost", "10x", "transform", "maximize"],
+      "templates": [
+        {
+          "pattern": "How I {action} to {outcome} {project}",
+          "example": "How I use CLAUDE.md files to 10x Claude Code effectiveness",
+          "description_pattern": "Updated {count} {type} in {project}. Now {result}",
+          "variables": ["action", "outcome", "project", "count", "type", "result"]
+        },
+        {
+          "pattern": "How I structure {complex_thing} for {project}",
+          "example": "How I structure complex prompts for {project}",
+          "description_pattern": "Most people struggle with {problem}. I use this {solution} to {benefit}",
+          "variables": ["complex_thing", "project", "problem", "solution", "benefit"]
+        }
+      ]
+    },
+    "transformation": {
+      "description": "Show dramatic before/after improvement",
+      "power_words": ["transformed", "breakthrough", "saved", "changed", "revolutionized"],
+      "templates": [
+        {
+          "pattern": "The {project} breakthrough that saved me {time_saved}",
+          "example": "The {project} breakthrough that saved me 10 hours",
+          "description_pattern": "Shipped {file_count} files in one sprint. Here's the Claude Code workflow that made it possible",
+          "variables": ["project", "time_saved", "file_count"]
+        },
+        {
+          "pattern": "The {technique} that transformed {project}",
+          "example": "The context management strategy that transformed {project}",
+          "description_pattern": "Stop {old_way}. Build {new_way}. Here's my system",
+          "variables": ["technique", "project", "old_way", "new_way"]
+        }
+      ]
+    },
+    "how_to": {
+      "description": "Educational step-by-step approach",
+      "power_words": ["how", "guide", "step-by-step", "here's", "exactly"],
+      "templates": [
+        {
+          "pattern": "I rebuilt {project} in {file_count} file changes (here's how)",
+          "example": "I rebuilt {project} in {file_count} file changes (here's how)",
+          "description_pattern": "Breaking down complex features into atomic tasks. Claude Code handles each piece perfectly when you structure it right",
+          "variables": ["project", "file_count"]
+        },
+        {
+          "pattern": "How to {action} (real example: {project})",
+          "example": "How to structure Claude Code agents (real example: {project})",
+          "description_pattern": "Most people {common_approach}. I break everything into {better_approach}. Here's the pattern",
+          "variables": ["action", "project", "common_approach", "better_approach"]
+        },
+        {
+          "pattern": "How I {action} with Claude Code ({result})",
+          "example": "How I debug with Claude Code (no more console.log spam)",
+          "description_pattern": "Prompt Claude to {technique}. {project} {outcome}",
+          "variables": ["action", "result", "technique", "project", "outcome"]
+        }
+      ]
+    }
+  },
+  "matching_rules": {
+    "progress_updates": {
+      "file_count_threshold": 3,
+      "preferred_hooks": ["transformation", "how_to", "contrarian_snapback"],
+      "context_triggers": {
+        "high_file_count": "transformation",
+        "agent_files": "contrarian_snapback",
+        "testing_focus": "how_to"
+      }
+    },
+    "architecture_insights": {
+      "preferred_hooks": ["contrarian_snapback", "how_to"],
+      "agent_files_required": true
+    },
+    "tips_and_tricks": {
+      "preferred_hooks": ["benefit_driven", "transformation", "contrarian_snapback"],
+      "context_triggers": {
+        "documentation": "contrarian_snapback",
+        "workflow": "benefit_driven"
+      }
+    },
+    "learning_moments": {
+      "preferred_hooks": ["contrarian_snapback", "how_to", "benefit_driven"],
+      "context_triggers": {
+        "debugging": "contrarian_snapback",
+        "testing": "benefit_driven",
+        "dependencies": "how_to"
+      }
+    }
+  }
+}
