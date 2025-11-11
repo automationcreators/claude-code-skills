@@ -34,6 +34,20 @@ For best results, install these fonts:
 
 The skill will fall back to system fonts if custom fonts aren't available.
 
+## Output Locations
+
+### Social Media Scripts
+**Default Location:** `/Users/elizabethknopf/Documents/claudec/active/Social-Content-Generator/pillar_scripts/`
+
+All social media scripts, content variations, and strategic content pieces are automatically saved here.
+
+**Google Drive Backup:** https://drive.google.com/drive/folders/1KFTbNaKf44tyIVPknDnzshW-DsrJuxnx
+
+### Generated Images
+**Default Location:** `examples/output/`
+
+All generated brand images (headers, covers, social posts) are saved here.
+
 ## Quick Start
 
 ### View Brand Guidelines

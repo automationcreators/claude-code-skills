@@ -327,6 +327,35 @@ Create a square profile picture for Twitter using the AI OPS character.
 **Issue: Pattern too busy**
 - Solution: Reduce pattern opacity to 20%, or use solid blue background
 
+## Output Locations
+
+### Social Media Scripts & Content
+All social media scripts, content variations, and strategic content are saved to:
+
+```
+/Users/elizabethknopf/Documents/claudec/active/Social-Content-Generator/pillar_scripts/
+```
+
+**Naming Convention:**
+- `social_media_scripts_YYYY-MM-DD.md`
+- `SCRIPTS_SUMMARY_YYYY-MM-DD.md`
+
+**Google Drive Backup:**
+Scripts are also backed up to Google Drive folder:
+- https://drive.google.com/drive/folders/1KFTbNaKf44tyIVPknDnzshW-DsrJuxnx
+- Folder ID: `1KFTbNaKf44tyIVPknDnzshW-DsrJuxnx`
+
+### Generated Brand Images
+All generated images (headers, covers, social posts) are saved to:
+
+```
+/Users/elizabethknopf/Documents/claudec/systems/skills-main/boring-business-brand/examples/output/
+```
+
+**Naming Convention:**
+- `{platform}_{layout}_{description}.png`
+- Examples: `beehiiv_centered.png`, `skool_corner.png`
+
 ## Technical Requirements
 
 ### Python Dependencies
