@@ -46,16 +46,33 @@ Examples:
 
 ## Integration Points
 
-### Google Drive Sync (Future)
+### Google Drive Sync
 **Target Folder:**
 - Folder ID: `1KFTbNaKf44tyIVPknDnzshW-DsrJuxnx`
-- Name: Content Scripts / Pillar Scripts
+- URL: https://drive.google.com/drive/folders/1KFTbNaKf44tyIVPknDnzshW-DsrJuxnx
+- Name: Boring Business AI - Social Scripts
 - Purpose: Cloud backup and team access
 
-**Sync Strategy:**
-- Automatic upload after script generation
-- Version naming with timestamps
-- Maintain local copies in pillar_scripts/
+**Upload Methods:**
+
+**Option 1: Python API Script (Automated)**
+```bash
+cd ~/Documents/claudec/active/Social-Content-Generator/pillar_scripts/
+python upload_to_gdrive.py  # Uploads all current year scripts
+```
+
+**Option 2: MCP Server Integration**
+- Simtheory MCP (full upload support)
+- piotr-agier/google-drive-mcp (OAuth-based)
+- See `pillar_scripts/GOOGLE_DRIVE_INTEGRATION.md` for details
+
+**Option 3: Manual Upload**
+- Drag and drop to Google Drive folder in browser
+- Use Google Drive Desktop app
+
+**Current Status:** Python upload script ready to use
+**Documentation:** See `pillar_scripts/GOOGLE_DRIVE_INTEGRATION.md`
+**Setup Required:** OAuth credentials from Google Cloud Console
 
 ### GitHub Repository
 **Repository:** `automationcreators/claude-code-skills`

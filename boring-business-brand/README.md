@@ -43,6 +43,12 @@ All social media scripts, content variations, and strategic content pieces are a
 
 **Google Drive Backup:** https://drive.google.com/drive/folders/1KFTbNaKf44tyIVPknDnzshW-DsrJuxnx
 
+**Upload to Google Drive:**
+```bash
+cd pillar_scripts && python upload_to_gdrive.py
+```
+See `pillar_scripts/GOOGLE_DRIVE_INTEGRATION.md` for setup instructions.
+
 ### Generated Images
 **Default Location:** `examples/output/`
 

@@ -341,9 +341,17 @@ All social media scripts, content variations, and strategic content are saved to
 - `SCRIPTS_SUMMARY_YYYY-MM-DD.md`
 
 **Google Drive Backup:**
-Scripts are also backed up to Google Drive folder:
-- https://drive.google.com/drive/folders/1KFTbNaKf44tyIVPknDnzshW-DsrJuxnx
-- Folder ID: `1KFTbNaKf44tyIVPknDnzshW-DsrJuxnx`
+Scripts can be automatically uploaded to Google Drive:
+- **Folder:** https://drive.google.com/drive/folders/1KFTbNaKf44tyIVPknDnzshW-DsrJuxnx
+- **Folder ID:** `1KFTbNaKf44tyIVPknDnzshW-DsrJuxnx`
+
+**Upload Script:**
+```bash
+cd ~/Documents/claudec/active/Social-Content-Generator/pillar_scripts/
+python upload_to_gdrive.py  # Uploads all scripts from current year
+```
+
+**Setup:** See `pillar_scripts/GOOGLE_DRIVE_INTEGRATION.md` for complete setup instructions including OAuth credentials configuration.
 
 ### Generated Brand Images
 All generated images (headers, covers, social posts) are saved to:

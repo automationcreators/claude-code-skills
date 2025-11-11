@@ -1,2 +1,7 @@
 Pillow>=10.0.0
 numpy>=1.24.0
+
+# Google Drive API integration
+google-auth-oauthlib>=1.0.0
+google-auth-httplib2>=0.1.0
+google-api-python-client>=2.100.0
